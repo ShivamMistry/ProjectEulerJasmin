@@ -2,41 +2,42 @@
 .super java/lang/Object
 
 .method public static primeFactor(JJ)J
-    .limit stack 3
+    .limit stack 6
     .limit locals 5
-
+	lload_0
+    lload_2
+    lsub
+	l2i
+    ifne OtherThings
     lload_0
-     lload_1
-     lsub
-     ifne OtherThings
-     lload_0
-     lreturn
+    lreturn
 OtherThings:
-     lload_0
-     lload_1
-     lrem
-     ifne Inc
-     lload_0
-     lload_1
-     ldiv
-     lload_1
-     invokestatic Euler03/primeFactor(JJ)J
-     lreturn
+    lload_0
+    lload_2
+    lrem
+	l2i
+    ifne Inc
+    lload_0
+    lload_2
+    ldiv
+    lload_2
+    invokestatic Euler03/primeFactor(JJ)J
+    lreturn
 Inc:
-     lload_0
-     lload_1
-     iconst_1
-     i2l
-     ladd
-     invokestatic Euler03/primeFactor(JJ)J
-     lreturn
+    lload_0
+    lload_2
+    iconst_1
+    i2l
+    ladd
+    invokestatic Euler03/primeFactor(JJ)J
+    lreturn
 .end method
 
 
 .method public static main([Ljava/lang/String;)V
     .limit stack 5
     .limit locals 3
-    ldc 600851475143
+    ldc2_w 600851475143
     iconst_3
     i2l
     invokestatic Euler03/primeFactor(JJ)J
