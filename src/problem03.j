@@ -7,7 +7,7 @@
     lload_0
     lload_2
     lsub
-	l2i
+    l2i
     ifne OtherThings
     lload_0
     lreturn
