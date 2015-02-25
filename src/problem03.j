@@ -36,14 +36,12 @@ Inc:
 
 .method public static main([Ljava/lang/String;)V
     .limit stack 5
-    .limit locals 3
+    .limit locals 1
+    getstatic java/lang/System/out Ljava/io/PrintStream;
     ldc2_w 600851475143
     iconst_3
     i2l
     invokestatic Euler03/primeFactor(JJ)J
-    lstore_1
-    getstatic java/lang/System/out Ljava/io/PrintStream;
-    lload_1
     invokevirtual java/io/PrintStream/println(J)V
     return
 
