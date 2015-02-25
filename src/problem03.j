@@ -25,8 +25,7 @@ Factor:
 Inc:
     lload_0
     lload_2
-    iconst_1
-    i2l
+    lconst_1
     ladd
     invokestatic Euler03/primeFactor(JJ)J
     lreturn
@@ -38,8 +37,7 @@ Inc:
     .limit locals 1
     getstatic java/lang/System/out Ljava/io/PrintStream;
     ldc2_w 600851475143
-    iconst_3
-    i2l
+    ldc2_w 3
     invokestatic Euler03/primeFactor(JJ)J
     invokevirtual java/io/PrintStream/println(J)V
     return
