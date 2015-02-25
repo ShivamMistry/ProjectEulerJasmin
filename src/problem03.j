@@ -8,10 +8,10 @@
     lload_2
     lsub
     l2i
-    ifne OtherThings
+    ifne Factor
     lload_0
     lreturn
-OtherThings:
+Factor:
     lload_0
     lload_2
     lrem
