@@ -4,7 +4,7 @@
 .method public static primeFactor(JJ)J
     .limit stack 6
     .limit locals 5
-	lload_0
+    lload_0
     lload_2
     lsub
 	l2i
@@ -15,7 +15,7 @@ OtherThings:
     lload_0
     lload_2
     lrem
-	l2i
+    l2i
     ifne Inc
     lload_0
     lload_2
