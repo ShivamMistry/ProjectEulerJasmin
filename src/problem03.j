@@ -6,8 +6,7 @@
     .limit locals 5
     lload_0
     lload_2
-    lsub
-    l2i
+    lcmp
     ifne Factor
     lload_0
     lreturn
